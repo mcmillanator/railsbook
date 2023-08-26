@@ -19,7 +19,7 @@ RUN python -m pip install -q \
 
 # add zsh
 RUN apt-get update && \
-		apt-get install -qy zsh && \
+		apt-get install -qy zsh 
 
 RUN chown -R jovyan /srv /usr/local/
 
