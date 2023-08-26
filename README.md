@@ -5,7 +5,7 @@ This allows you to develop a Rails application while using Jupyter Notebook to d
 
 
 The container will act as a rails executable when given the `rails` argument.
-For example ```alias rails='docker run -v `pwd`:/srv -it --rm docker.io/mcmillanator/jupyter-on-rails rails'``
+For example ```alias rails='docker run -v `pwd`:/srv -it --rm docker.io/mcmillanator/jupyter-on-rails rails```
 
 ## Dependencies
 
