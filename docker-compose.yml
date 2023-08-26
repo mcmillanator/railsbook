@@ -1,0 +1,20 @@
+name: jupyter-rails
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: railsbook
+    image: mcmillanator/railsbook
+    restart: always
+    user: ${UID}
+    volumes:
+      - data:/srv
+      - user-data:/home/jovyan/.jupyter
+    ports:
+      - 3000:3000
+      - 8888:8888
+
+volumes:
+  data:
+  user-data:
